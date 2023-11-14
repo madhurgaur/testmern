@@ -2,7 +2,7 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "my backend tutorial",
-  "main": "index.js",
+  "main": "3requests.js",
   "scripts": {
     "start": "nodemon 3requests.js",
     "test": "echo \"Error: no test specified\" && exit 1"
