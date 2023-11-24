@@ -24,7 +24,10 @@ async function main() {
 server.use(cors())
 server.use(express.json()); //builtin middleware, body parser
 server.use(express.static(process.env.PUBLIC_DIR));
-app.use("/node_modules", express.static('node_modules'));
+server.use("/node_modules", express.static('node_modules'));
+server.use('/', async (req,res)=> {
+  res.json("Yoooo!")
+})
 server.use('/api/quotes',quoteRouter.routes);
 server.use('/api/users',userRouter.routes);
 server.use('*',(req,res)=>{
