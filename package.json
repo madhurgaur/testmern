@@ -4,7 +4,7 @@
   "description": "my backend tutorial",
   "main": "3requests.js",
   "scripts": {
-    "start": "nodemon 3requests.js",
+    "start": "node 3requests.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Madhur Gaur",
